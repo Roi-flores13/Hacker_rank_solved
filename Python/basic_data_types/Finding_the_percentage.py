@@ -7,11 +7,11 @@ if __name__ == '__main__':
         student_marks[name] = scores
     query_name = input()
     
-    average = round(sum(student_marks[query_name]) / len(student_marks[query_name]), 3)
+    average = round(sum(student_marks[query_name]) / len(student_marks[query_name]), 2)
     average = str(average)
     
     #This is not necessary, this part of the code is only implemented for output requirements for hacker rank.
     #The average is correctly computed, this part only adds an extra zero if the float only has 1 decimal
     if len(average) == 4:
-        average = average + "0"   
+        average = average + "0"  
     print(average)
