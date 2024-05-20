@@ -14,4 +14,6 @@ if __name__ == '__main__':
     #The average is correctly computed, this part only adds an extra zero if the float only has 1 decimal
     if len(average) == 4:
         average = average + "0"  
+    elif len(average.split(".")[1]) == 1:
+        average = average + "0"
     print(average)
